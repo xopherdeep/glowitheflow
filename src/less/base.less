@@ -1,0 +1,32 @@
+*, *:before, *:after {
+  padding:        0;
+  margin:         0;
+  border:         0;
+  background:     transparent;
+  vertical-align: baseline;
+  box-sizing:     border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family:  @fontFamily--primary;
+  font-size:    @fontSize--body;
+  font-weight:  @fontWeight--normal;
+  line-height:  @lineHeight--base;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+button,
+input {
+  .spacing--horz(@spacing--normal);
+  outline: none;
+  font-size: inherit;
+  border-radius: 4px;
+}
